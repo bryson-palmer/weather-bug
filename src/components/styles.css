@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
 
 .main{
-    width: 70vw;
-    border-radius: 15px;
+    width: 90vw;
+    border-radius: 20px;
     background-color: #01579b;
 }
 
 .top{
-    /* height: 60px; */
+    height: 60px;
     background-color: #424242;
     color: whitesmoke;
     padding: 10px;
@@ -21,10 +21,8 @@
 .header{
     background-color: #424242;
     color: whitesmoke;
-    margin: 0px 0px 0px 0px;
-    padding: 10px;
     font-size: 25px;
-    border-radius: 15px 15px 0 0;
+    border-radius: 20px 20px 0 0;
     font-family: 'Recursive', sans-serif;
 }
 
@@ -37,7 +35,7 @@
     padding: 15px;
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
 }
 
