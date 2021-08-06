@@ -22,7 +22,7 @@ const CardExampleCard = ({weatherData}) => (
         </section>
 
         <section className='flex'>
-            <p className='temp'>Temperature: {weatherData.main.temp} &deg;C</p>
+            <p className='temp'>Temperature: {weatherData.main.temp} &deg;F</p>
             <p className='temp'>Humidity: {weatherData.main.humidity} %</p>
         </section>
 

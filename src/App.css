@@ -1,10 +1,104 @@
+/* General Styles */
 
-.App {
-  background-color: #eeeeee;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: black;
+.bg {
+  height: 70vh;
+  padding: 50px;
+  overflow: auto;
+  transition: 0.2s all linear;
+}
+
+.header {
+  height: 10vh;
+  text-transform: uppercase;
+  transition: 0.2s all linear;
+}
+
+.nav {
+  height: 10vh;
+  text-transform: uppercase;
+  transition: 0.2s all linear;
+}
+
+.footer {
+  height: 10vh;
+  text-transform: uppercase;
+  transition: 0.2s all linear;
+}
+
+.btn {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 4px;
+  margin-top: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s all linear;
+}
+
+.para {
+  width: 70vw;
+  transition: 0.2s all linear;
+}
+
+/* Light Mode Styles */
+
+.bg-light {
+  background-color: #fff;
+}
+
+.header-light {
+  color: #222;
+  background-color: #fff;
+}
+
+.nav-light {
+  color: #222;
+  background-color: #fff;
+}
+
+.footer-light {
+  color: #222;
+  background-color: #fff;
+}
+
+.para-light {
+  color: #222;
+}
+
+.btn-light {
+  background-color: #222;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Dark Mode Styles */
+
+.bg-dark {
+  background-color: #222;
+}
+
+.header-dark {
+  color: #fff;
+  background-color: #222;
+}
+
+.nav-dark {
+  color: #fff;
+  background-color: #222;
+}
+
+.footer-dark {
+  color: #fff;
+  background-color: #222;
+}
+
+.para-dark {
+  color: #fff;
+}
+
+.btn-dark {
+  background-color: #fff;
+  color: #222;
+
 }
