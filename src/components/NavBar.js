@@ -1,7 +1,9 @@
 import React, { useContext } from "react"
 import { ThemeContext } from '../contexts/ThemeContext'
 import SwitchButton from './ThemeButton'
-import '../App.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTemperatureHigh, faViruses, faSmog } from '@fortawesome/free-solid-svg-icons'
+import './styles.css'
 
 export default function NavBar() {
     
@@ -12,7 +14,9 @@ export default function NavBar() {
 
     return (
         <nav className={`nav ${darkMode ? 'nav-dark' : 'nav-light'}`}>
-            I am the nav bar.
+            <FontAwesomeIcon icon={faTemperatureHigh} />
+            <FontAwesomeIcon icon={faViruses} />
+            <FontAwesomeIcon icon={faSmog} />
             <SwitchButton />
         </nav>
     )

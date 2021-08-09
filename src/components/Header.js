@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import { ThemeContext } from "../contexts/ThemeContext"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBug } from '@fortawesome/free-solid-svg-icons'
-import '../App.css'
+import './styles.css'
 
 export default function Header() {
 
