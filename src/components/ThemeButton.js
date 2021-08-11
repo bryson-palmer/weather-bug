@@ -1,5 +1,8 @@
 import React, { useContext } from "react"
 import { ThemeContext } from "../contexts/ThemeContext"
+import Switch from '@material-ui/core/Switch';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormGroup from '@material-ui/core/FormGroup';
 import './styles.css'
 
 export default function SwitchButton() {
@@ -19,8 +22,11 @@ export default function SwitchButton() {
     }
 
     return (
-        <button className={`btn ${darkMode ? 'btn-dark' : 'btn-light'}`} onClick={onClick}>
-            {darkMode ? 'Light Mode' : 'Dark Mode'}
-        </button>
+        <FormGroup>
+            <FormControlLabel
+                control={<Switch checked={darkMode} onChange={onClick} aria-label="theme switch" />}
+                label={darkMode ? 'Light Mode' : 'Dark Mode'}
+            />
+        </FormGroup>
     )
 }

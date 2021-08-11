@@ -1,7 +1,6 @@
 /* General Styles */
 
 .header {
-    /* height: 10vh; */
     font-size: 1.5em;
     text-align: center;
     text-transform: uppercase;
@@ -10,14 +9,31 @@
   }
   
   .nav {
-    /* height: 10vh; */
+    display: flex;
+    flex-direction: column-reverse;
+    /* justify-content: space-evenly; */
+    align-items: center;
     text-align: center;
     text-transform: uppercase;
     transition: 0.2s all linear;
   }
+
+  .navButtons {
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s all linear;
+  }
+
+  .navButton {
+    font-size: 2em;
+    transition: 0.2s all linear;
+  }
+
+  .navType {
+    transition: 0.2s all linear;
+  }
   
   .footer {
-    /* height: 10vh; */
     text-align: center;
     position: sticky;
     bottom: 0;
@@ -29,7 +45,6 @@
     border: none;
     padding: 10px 30px;
     border-radius: 4px;
-    /* margin-top: 20px; */
     font-size: 15px;
     cursor: pointer;
     transition: 0.2s all linear;
@@ -49,17 +64,22 @@
   
   .header-light {
     color: #222;
-    /* background-color: #fff; */
   }
   
   .nav-light {
     color: #222;
-    /* background-color: #fff; */
+  }
+
+  .navButton-light {
+    color: #222;
+  }
+
+  .navType-light {
+    color: #222;
   }
   
   .footer-light {
     color: #222;
-    /* background-color: #fff; */
   }
   
   .heading-light {
@@ -81,17 +101,22 @@
   
   .header-dark {
     color: #fff;
-    /* background-color: #222; */
   }
   
   .nav-dark {
     color: #fff;
-    /* background-color: #222; */
+  }
+
+  .navButton-dark {
+    color: #fff;
+  }
+
+  .navType-dark {
+    color: #fff;
   }
   
   .footer-dark {
     color: #fff;
-    /* background-color: #222; */
   }
   
   .heading-dark {
