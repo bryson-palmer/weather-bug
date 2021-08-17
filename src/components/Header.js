@@ -1,7 +1,8 @@
 import React, { useContext } from "react"
 import { ThemeContext } from "../contexts/ThemeContext"
+import SwitchButton from './ThemeButton'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBug } from '@fortawesome/free-solid-svg-icons'
+import { faBug, faBars } from '@fortawesome/free-solid-svg-icons'
 import './styles.css'
 
 export default function Header() {
@@ -13,9 +14,13 @@ export default function Header() {
 
     return (
         <header className={`header ${darkMode ? 'header-dark' : 'header-light'}`}>
-            Weather {''}
-            <FontAwesomeIcon icon={faBug} />
-            {''} Bug
+            <FontAwesomeIcon icon={faBars}/>
+            <div>
+                Weather {''}
+                <FontAwesomeIcon icon={faBug} />
+                {''} Bug
+            </div>
+            <SwitchButton />
         </header>
     )
 }

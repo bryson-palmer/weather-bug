@@ -3,6 +3,8 @@ import { ThemeContext } from "../contexts/ThemeContext"
 import Switch from '@material-ui/core/Switch';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormGroup from '@material-ui/core/FormGroup';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 import './styles.css'
 
 export default function SwitchButton() {
@@ -24,8 +26,12 @@ export default function SwitchButton() {
     return (
         <FormGroup>
             <FormControlLabel
-                control={<Switch checked={darkMode} onChange={onClick} aria-label="theme switch" />}
-                label={darkMode ? 'Light Mode' : 'Dark Mode'}
+                control={<Switch checked={darkMode} onChange={onClick} color="primary" aria-label="theme switch" />}
+                label={darkMode ? 
+                    <FontAwesomeIcon icon={faSun}/> 
+                    : 
+                    <FontAwesomeIcon icon={faMoon}/>
+                }
             />
         </FormGroup>
     )
