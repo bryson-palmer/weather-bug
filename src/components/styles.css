@@ -16,6 +16,8 @@
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    position: sticky;
+    bottom: 0;
     transition: 0.2s all linear;
   }
 
@@ -31,22 +33,17 @@
   .navType {
     transition: 0.2s all linear;
   }
-  
-  .footer {
-    text-align: center;
-    position: sticky;
-    bottom: 0;
-    text-transform: uppercase;
-    transition: 0.2s all linear;
+
+  .switchButton {
+    text-transform: none;
   }
-  
-  .btn {
-    border: none;
-    padding: 10px 30px;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-    transition: 0.2s all linear;
+
+  .sun {
+    color: yellow;
+  }
+
+  .moon {
+    color: blue;
   }
   
   .heading {
@@ -77,23 +74,12 @@
     color: #222;
   }
   
-  .footer-light {
-    color: #222;
-  }
-  
   .heading-light {
     color: #222;
   }
   
   .para-light {
     color: #222;
-  }
-  
-  .btn-light {
-    background-color: #222;
-    color: #fff;
-    font-size: 15px;
-    cursor: pointer;
   }
   
   /* Dark Mode Styles */
@@ -114,20 +100,10 @@
     color: #fff;
   }
   
-  .footer-dark {
-    color: #fff;
-  }
-  
   .heading-dark {
     color: #fff;
   }
   
   .para-dark {
     color: #fff;
-  }
-  
-  .btn-dark {
-    background-color: #fff;
-    color: #222;
-  
   }

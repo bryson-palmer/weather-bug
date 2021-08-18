@@ -26,12 +26,19 @@ export default function SwitchButton() {
     return (
         <FormGroup>
             <FormControlLabel
-                control={<Switch checked={darkMode} onChange={onClick} color="primary" aria-label="theme switch" />}
-                label={darkMode ? 
-                    <FontAwesomeIcon icon={faSun}/> 
-                    : 
-                    <FontAwesomeIcon icon={faMoon}/>
+                className='switchButton'
+                control={
+                    <Switch 
+                        checked={darkMode} 
+                        checkedIcon={<FontAwesomeIcon className='sun' icon={faSun}/>} 
+                        icon={<FontAwesomeIcon className='moon' icon={faMoon}/>} 
+                        color="primary" 
+                        onChange={onClick} 
+                        aria-label="theme switch" 
+                    />
                 }
+                label='Mode'
+                labelPlacement='start'
             />
         </FormGroup>
     )
