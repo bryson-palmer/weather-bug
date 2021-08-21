@@ -8,11 +8,11 @@ import 'semantic-ui-css/semantic.min.css'
 import { ThemeProvider } from './contexts/ThemeContext'
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <ThemeProvider>
       <App />
-    </ThemeProvider>
-  </React.StrictMode>,
+    </ThemeProvider>,
+  // </React.StrictMode>,
   document.getElementById('root')
 );
 

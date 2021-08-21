@@ -1,109 +1,99 @@
 /* General Styles */
 
 .header {
-    width: 100%;
-    font-size: 1.5em;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0.5em;
-    display: flex;
-    justify-content: space-between;
-    transition: 0.2s all linear;
-  }
-  
-  .nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    position: sticky;
-    bottom: 0;
-    transition: 0.2s all linear;
-  }
+  width: 80%;
+  max-height: 10vh;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 1em;
+  margin: 0 auto;
+  background: transparent;
+  transition: 0.2s all linear;
+}
 
-  .navButton {
-    transition: 0.2s all linear;
-  }
+.title {
+  flex-grow: 1;
+  transition: 0.2s all linear;
+}
 
-  .navIcon {
-    font-size: 2em;
-    transition: 0.2s all linear;
-  }
+.switchButton {
+  text-transform: none;
+  margin: 0 !important;
+  transition: 0.2s all linear;
+}
 
-  .navType {
-    transition: 0.2s all linear;
-  }
+.sun {
+  color: yellow;
+  transition: 0.2s all linear;
+}
 
-  .switchButton {
-    text-transform: none;
-  }
+.moon {
+  color: blue;
+  transition: 0.2s all linear;
+}
+  
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 0.5em 1em;
+  margin: 0 auto;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-top: 0.5px inset rgba(255, 255, 255, 1);
+  transition: 0.2s all linear;
+}
 
-  .sun {
-    color: yellow;
-  }
+.navButton {
+  transition: 0.2s all linear;
+}
 
-  .moon {
-    color: blue;
-  }
-  
-  .heading {
-    text-transform: uppercase;
-    transition: 0.2s all linear;
-  }
-  
-  .para {
-    width: 70vw;
-    transition: 0.2s all linear;
-  }
-  
-  /* Light Mode Styles */
-  
-  .header-light {
-    color: #222;
-  }
-  
-  .nav-light {
-    color: #222;
-  }
+.navIcon {
+  font-size: 2em;
+  transition: 0.2s all linear;
+}
 
-  .navIcon-light {
-    color: #222;
-  }
+.navType {
+  transition: 0.2s all linear;
+}
+  
+.heading {
+  text-transform: uppercase;
+  transition: 0.2s all linear;
+}
+  
+.para {
+  width: 70vw;
+  transition: 0.2s all linear;
+}
+  
+/* Light Mode Styles */
+  
+.light {
+  color: #222;
+}
 
-  .navType-light {
-    color: #222;
-  }
+.nav-light {
+  color: #222;
+}
   
-  .heading-light {
-    color: #222;
-  }
+/* Dark Mode Styles */
   
-  .para-light {
-    color: #222;
-  }
-  
-  /* Dark Mode Styles */
-  
-  .header-dark {
-    color: #fff;
-  }
-  
-  .nav-dark {
-    color: #fff;
-  }
+.dark {
+  color: #fff;
+}
 
-  .navIcon-dark {
-    color: #fff;
-  }
-
-  .navType-dark {
-    color: #fff;
-  }
-  
-  .heading-dark {
-    color: #fff;
-  }
-  
-  .para-dark {
-    color: #fff;
-  }
+.nav-dark {
+  color: #fff;
+  background-color: #222;
+}

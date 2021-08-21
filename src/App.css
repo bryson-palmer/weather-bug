@@ -16,5 +16,6 @@
 /* Dark Mode Styles */
 
 .bg-dark {
-  background-color: #222;
+  background: rgb(34,34,34);
+  background: linear-gradient(180deg, rgba(34,34,34,1) 0%, rgba(38,79,142,1) 35%, rgba(80,191,247,1) 100%);
 }

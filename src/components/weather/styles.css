@@ -1,9 +1,10 @@
-/* 
+
 @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
 
 .WeatherLayout{
-    background-color: #eeeeee;
-    min-height: 100vh;
+    /* background-color: #eeeeee; */
+    /* min-height: 100vh; */
+    margin-top: 5em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +29,7 @@
     justify-content: space-between;
 }
 
-.header{
+.city{
     background-color: #424242;
     color: whitesmoke;
     font-size: 25px;
@@ -89,4 +90,4 @@
 .flex-forecast{
     display: flex;
     justify-content: space-between;
-} */
+}

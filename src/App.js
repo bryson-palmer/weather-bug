@@ -3,7 +3,6 @@ import { ThemeContext } from "./contexts/ThemeContext";
 import Header from './components/Header'
 import NavBar from './components/NavBar'
 import WeatherLayout from './components/weather/WeatherLayout'
-import Body from './components/Body'
 import './App.css'
 
 export default function App() {
@@ -21,8 +20,7 @@ export default function App() {
   return (
     <div className={`bg ${darkMode ? "bg-dark" : "bg-light"}`}>
       <Header />
-      <Body />
-      {/* <WeatherLayout /> */}
+      <WeatherLayout />
       <NavBar />
     </div>
   )

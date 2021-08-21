@@ -10,11 +10,11 @@ export default function Body() {
     const darkMode = theme.state.darkMode;
 
     return (
-        <div className={`bg ${darkMode ? "bg-dark" : "bg-light"}`}>
-            <h1 className={`heading ${darkMode ? "heading-dark" : "heading-light"}`}>
+        <div className={`bg ${darkMode ? "dark" : "light"}`}>
+            <h1 className={`heading ${darkMode ? "dark" : "light"}`}>
                 {darkMode ? "Dark Mode" : "Light Mode"}
             </h1>
-            <p className={`para ${darkMode ? "para-dark" : "para-light"}`}>
+            <p className={`para ${darkMode ? "dark" : "light"}`}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua. Sed tempus urna et pharetra pharetra massa massa ultricies. Id porta nibh venenatis cras sed felis
                 eget velit. A diam sollicitudin tempor id eu. Tincidunt arcu non sodales neque sodales ut etiam sit. Eu

@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
 import { ThemeContext } from '../contexts/ThemeContext'
-import Button from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faTemperatureHigh, faViruses, faSmog } from '@fortawesome/free-solid-svg-icons'
@@ -19,12 +19,12 @@ export default function NavBar() {
                 <Button className='navButton'>
                     <FontAwesomeIcon
                         icon={faHome}
-                        className={`navIcon ${darkMode ? 'navIcon-dark' : 'navIcon-light'}`}
+                        className={`navIcon ${darkMode ? 'dark' : 'light'}`}
                         aria-label='home screen'
                     />
                 </Button>
                 <Typography
-                    className={`navType ${darkMode ? 'navType-dark' : 'navType-light'}`}
+                    className={`navType ${darkMode ? 'dark' : 'light'}`}
                     variant='subtitle2'
                 >
                     Home
@@ -35,12 +35,12 @@ export default function NavBar() {
                 <Button className='navButton'>
                     <FontAwesomeIcon
                         icon={faTemperatureHigh}
-                        className={`navIcon ${darkMode ? 'navIcon-dark' : 'navIcon-light'}`}
+                        className={`navIcon ${darkMode ? 'dark' : 'light'}`}
                         aria-label='weather and forecast'
                     />
                 </Button>
                 <Typography
-                    className={`navType ${darkMode ? 'navType-dark' : 'navType-light'}`}
+                    className={`navType ${darkMode ? 'dark' : 'light'}`}
                     variant='subtitle2'
                 >
                     Weather
@@ -51,12 +51,12 @@ export default function NavBar() {
                 <Button className='navButton'>
                     <FontAwesomeIcon
                         icon={faViruses}
-                        className={`navIcon ${darkMode ? 'navIcon-dark' : 'navIcon-light'}`}
+                        className={`navIcon ${darkMode ? 'dark' : 'light'}`}
                         aria-label='covid-19'
                     />
                 </Button>
                 <Typography
-                    className={`navType ${darkMode ? 'navType-dark' : 'navType-light'}`}
+                    className={`navType ${darkMode ? 'dark' : 'light'}`}
                     variant='subtitle2'
                 >
                     Covid-19
@@ -67,12 +67,12 @@ export default function NavBar() {
                 <Button className='navButton'>
                     <FontAwesomeIcon
                         icon={faSmog}
-                        className={`navIcon ${darkMode ? 'navIcon-dark' : 'navIcon-light'}`}
+                        className={`navIcon ${darkMode ? 'dark' : 'light'}`}
                         aria-label='air quality'
                     />
                 </Button>
                 <Typography
-                    className={`navType ${darkMode ? 'navType-dark' : 'navType-light'}`}
+                    className={`navType ${darkMode ? 'dark' : 'light'}`}
                     variant='subtitle2'
                 >
                     Air Quality

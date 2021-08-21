@@ -11,8 +11,8 @@ const refresh = () => {
 const CardExampleCard = ({weatherData}) => (
     <main className='main'>
 
-        <header className='top'>
-            <p className='header'>{weatherData.name}</p>
+        <header className='top' >
+            <p className='city'>{weatherData.name}</p>
             <Button className='button' inverted color='blue' circular icon='refresh' onClick={refresh} />
         </header>
         

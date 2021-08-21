@@ -37,8 +37,8 @@ export default function SwitchButton() {
                         aria-label="theme switch" 
                     />
                 }
-                label='Mode'
-                labelPlacement='start'
+                // label={`${darkMode ? 'Light' : 'dark'}`}
+                // labelPlacement='top'
             />
         </FormGroup>
     )

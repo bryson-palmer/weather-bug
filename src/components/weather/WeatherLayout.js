@@ -32,7 +32,7 @@ export default function WeatherLayout() {
       .then(res => res.json())
       .then(result => {
         setData(result)
-        // console.log('setData result', result)
+        console.log('setData result', result)
       })
 
     }
